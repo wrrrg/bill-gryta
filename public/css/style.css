@@ -1,0 +1,209 @@
+@CHARSET "ISO-8859-1";
+/* Reset CSS
+ * --------------------------------------- */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td {
+    padding: 0;
+    margin: 0;
+}
+a{
+	text-decoration:none;
+}
+table {
+    border-spacing: 0;
+}
+fieldset,img {
+    border: 0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+    font-weight: normal;
+    font-style: normal;
+}
+strong{
+	font-weight: bold;
+}
+ol,ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+caption,th {
+    text-align: left;
+
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+    font-size: 100%;
+    margin:0;
+    padding:0;
+    color:#444;
+}
+q:before,q:after {
+    content:'';
+}
+abbr,acronym { border: 0;
+}
+
+/* Basic body/nav css */
+
+body {
+  transition: all .3s ease;
+  font-family: 'Spectral', serif;
+  font-weight: 300;
+}
+
+/* turns off the scroll icons on first page */
+body.fp-viewing-firstPage #fp-nav{
+    opacity: 0;
+}
+
+.section h2 {
+  font-size: 2rem;
+}
+
+.section {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Menu Anchors */
+
+#myMenu {
+
+  position: fixed;
+  top: 2%;
+  right: 1%;
+  z-index: 1;
+
+}
+
+#myMenu ul {
+  margin: 0 auto;
+}
+
+#myMenu li {
+  display: inline;
+  padding: 5px;
+  text-decoration: none;
+  border-radius: 5px;
+  background: red;
+
+}
+
+#myMenu li.active {
+  background: orange;
+}
+
+#myMenu li:hover {
+  background: purple;
+}
+
+#myMenu a {
+  text-decoration: none;
+  border-radius: 8px;
+  padding: 10px;
+  color: white;
+}
+
+#myMenu a:hover {
+
+  color: yellow;
+}
+
+
+/* specific sections */
+
+/* landing page */
+
+.intro p{
+	width: 50%;
+	margin: 0 auto;
+	font-size: 1.5em;
+}
+
+.hello-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  width: 80%;
+  text-align: center;
+}
+
+.hello-content strong {
+  color: white;
+}
+
+/* about me */
+
+
+/* #section1 {
+  padding: 100px;
+} */
+.about-me {
+  width: 80%;
+  height: 80%;
+  background: rgb(252, 247, 199);
+  border-radius: 5px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 30px;
+}
+
+.about-me p {
+  text-indent: 2em;
+}
+
+.language-head {
+  text-align: center;
+}
+
+.active-head {
+  color: black;
+  font-weight: 700;
+}
+
+.language-result {
+  width: 40%;
+  margin: 20px auto;
+  font-size: 1.3rem;
+  text-align: left;
+  line-height: 2.5em;
+
+}
+
+/* click buttons */
+.icon-up-open-big { display: inline-block; }
+
+.icon-up-open-big:after {
+  text-align: center;
+  content: "v";
+  font-size: 1.5rem;
+  display: block;
+
+  color: black;
+  -webkit-transition: color .3s;
+          transition: color .3s;
+}
+
+
+.scroll-icon {
+	position: absolute;
+ 	left: 50%;
+  bottom: 50px;
+  padding: 0 10px;
+  	-webkit-transform: translateX(-50%);
+  	    -ms-transform: translateX(-50%);
+  	        transform: translateX(-50%);
+  transition: all ease .5s;
+}
+
+
+
+/* .footer-div{
+  margin: 50px;
+  height: 100px;
+} */

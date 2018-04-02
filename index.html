@@ -3,8 +3,131 @@
   <head>
     <meta charset="utf-8">
     <title>William Gryta - Full Stack Developer</title>
+    <link rel="stylesheet" href="node_modules/fullpage.js/dist/jquery.fullpage.css" />
+    <link rel="stylesheet" href="public/css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Spectral:300,400,700,700i" rel="stylesheet">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="node_modules/fullpage.js/vendors/scrolloverflow.js"></script>
+    <script type="text/javascript" src="node_modules/fullpage.js/dist/jquery.fullpage.js"></script>
+    <script type="text/javascript" src="public/js/app.js"></script>
+
+    <!-- <script type="text/javascript">
+      $(document).ready(function() {
+        $('#fullpage').fullpage({
+          menu: "#myMenu",
+          anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthpage'],
+          sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C'],
+          navigation: true,
+          navigationPosition: 'right',
+          navigationTooltips: ['First page', 'Second page', 'Third and last page']
+        });
+      });
+    </script> -->
+
+
   </head>
   <body>
+    <ul id="myMenu">
+      <li data-menuanchor="firstPage"><a href="#firstPage">Welcome</a></li>
+      <li data-menuanchor="secondPage"><a href="#secondPage">About Me</a></li>
+      <li data-menuanchor="thirdPage"><a href="#thirdPage">Portfolio</a></li>
+      <li data-menuanchor="fourthPage"><a href="#fourthPage">Contact</a></li>
+    </ul>
+
+    <header>
+
+    </header>
+    <div id="fullpage">
+
+      <div class="section first-section" id="section0">
+          <div class="hello-content">
+            <p>Hi, I'm <strong>William</strong>, a Full Stack Web Developer from Austin, Texas.</p>
+          </div>
+
+          <div class="scroll-icon">
+            <p>Learn More</p>
+            <a href="#secondPage" class="icon-up-open-big"></a>
+          </div>
+      </div>
+      <div class="section" id="section1">
+        <div class="about-me">
+          <h2>About Me</h2>
+          <p>     Growing up in the age of Geocities and Angelfire, I've always had a passion for building web projects. As I've grown older, I've honed that passion into a professional skillset so that I can be a valuable asset to any team. </p>
+
+
+            <div class="language-head">
+              Languages that I use:</br>
+              <span class="languages-frontend active-head" id="front-end">Front End</span> / <span class="languages-backend" id="back-end">Back End</span>
+            </div>
+            <div class="language-result">
+              <div class="language-result-frontend active-result">
+                <ul>
+                  <li>HTML5</li>
+                  <li>CSS3</li>
+                  <li>Javascript</li>
+                  <li>jQuery</li>
+                  <li>Handlebars</li>
+                  <li>React.JS</li>
+                </ul>
+
+              </div>
+              <div class="language-result-backend">
+                <ul>
+                  <li>MySQL (and Sequelize)</li>
+                  <li>MongoDB (and Mongoose)</li>
+                  <li>Firebase</li>
+                </ul>
+
+              </div>
+            </div>
+
+
+
+
+          <!-- <div class="scroll-icon">
+            <p>Portfolio Examples</p>
+            <a href="#thirdPage" class="icon-up-open-big"></a>
+          </div> -->
+        </div>
+      </div>
+      <div class="section" id="section2">
+              <div class="slide"  id="slide1">
+                  <div class='intro'>
+                    <p>slide text 1</p>
+                  </div>
+                </div>
+
+               <div class="slide" id="slide2">
+                  <div class='intro'>
+                    <p>slide text 2</p>
+                  </div>
+                </div>
+
+                <div class="slide" id="slide3">
+                  <div class='intro'>
+                    <p>slide text 3</p>
+                  </div>
+                </div>
+
+                <div class="slide" id=slide4>
+                  <div class='intro'>
+                    <p>slide text 4</p>
+                  </div>
+                </div>
+
+      </div>
+      <div class="section" id="section3">
+          <h2>Section 4</h2>
+      </div>
+
+      <div class="section fp-auto-height">Footer</div>
+
+
+    </div>
+
+    <!-- <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script> -->
 
   </body>
 </html>
