@@ -32,16 +32,16 @@ $(document).on("click", ".scroll-icon", function(){
 	$.fn.fullpage.moveTo(2);
 });
 
-$(document).on("click", ".languages-frontend, .languages-backend", function(){
-	$(".language-result-frontend, .language-result-backend").hide();
-	$(".languages-frontend, .languages-backend").removeClass("active-head");
-	$(this).addClass("active-head");
-
-	var displayThis = $(this).attr("id");
-
-	if(displayThis == "front-end"){
-		$(".language-result-frontend").show();
-	} else if (displayThis == "back-end"){
-		$(".language-result-backend").show();
-	}
-});
+// $(document).on("click", ".languages-frontend, .languages-backend", function(){
+// 	$(".language-result-frontend, .language-result-backend").hide();
+// 	$(".languages-frontend, .languages-backend").removeClass("active-head");
+// 	$(this).addClass("active-head");
+//
+// 	var displayThis = $(this).attr("id");
+//
+// 	if(displayThis == "front-end"){
+// 		$(".language-result-frontend").show();
+// 	} else if (displayThis == "back-end"){
+// 		$(".language-result-backend").show();
+// 	}
+// });
