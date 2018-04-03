@@ -203,6 +203,55 @@ body.fp-viewing-firstPage #fp-nav{
 /* .grid-item */
 
 
+
+/* slide image borders */
+#section2 h3 {
+  font-size: 2rem;
+}
+
+#section2 p {
+  font-size: 1rem;
+  margin-top: 20px;
+}
+.laptop-screen {
+  height: 400px;
+  width: 35%;
+  border-top: 10px rgb(241, 241, 241) solid;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  margin: 0 auto;
+  margin-top: 100px;
+  border-left: 7px solid rgb(241,241,241);
+  border-right: 7px solid rgb(241,241,241);
+  background: rgb(25,25,25);
+}
+
+.laptop-bottom a {
+  width: 50%;
+  padding-left: 1rem;
+  padding-right: 2rem;
+  font-size: 1.3rem;
+  color: white;
+  line-height: 2.5rem;
+  transition: all .5s ease-in;
+
+
+}
+
+.slide-link:hover {
+  display: inline;;
+}
+
+
+.laptop-bottom {
+  width: 35%;
+  height: 20px;
+  display: block;
+  border: 15px solid rgb(250,250,250);
+  margin: 0 auto;
+  background: rgb(97, 97, 97);
+  height: 40px;
+}
 /* click buttons */
 .icon-up-open-big { display: inline-block; }
 

@@ -24,13 +24,21 @@ $(document).ready(function() {
 
 	});
 
-	$(" .language-result-backend").hide();
+	// $(" .language-result-backend").hide();
+	// var laptopLinks = $(".laptop-screen").find("a");
+	// $(laptopLinks).fadeOut(50);
 });
 
 
 $(document).on("click", ".scroll-icon", function(){
 	$.fn.fullpage.moveTo(2);
 });
+
+// $(document).on("mouseover", ".laptop-screen", function(){
+// 	var links = $(this).find("a");
+// 	$(links).fadeToggle();
+//
+// });
 
 // $(document).on("click", ".languages-frontend, .languages-backend", function(){
 // 	$(".language-result-frontend, .language-result-backend").hide();
